@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A0FDFD320267F6F004306CE /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDF9A20267F6A004306CE /* AnimationComponent.swift */; };
+		7A0FDFD520267F6F004306CE /* PrizeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDF9C20267F6A004306CE /* PrizeCollection.swift */; };
+		7A0FDFD620267F70004306CE /* StorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDF9D20267F6A004306CE /* StorageKey.swift */; };
+		7A0FDFD720267F70004306CE /* MovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDF9E20267F6B004306CE /* MovementComponent.swift */; };
+		7A0FDFD820267F70004306CE /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDF9F20267F6B004306CE /* MenuScene.swift */; };
+		7A0FDFD920267F70004306CE /* CharacterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFA020267F6B004306CE /* CharacterEntity.swift */; };
+		7A0FDFDB20267F70004306CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A0FDFA220267F6B004306CE /* LaunchScreen.storyboard */; };
+		7A0FDFDC20267F70004306CE /* SpriteNodeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFA320267F6B004306CE /* SpriteNodeComponent.swift */; };
+		7A0FDFDD20267F70004306CE /* IdentityComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFA420267F6B004306CE /* IdentityComponent.swift */; };
+		7A0FDFDE20267F70004306CE /* GameConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFA520267F6B004306CE /* GameConstant.swift */; };
+		7A0FDFDF20267F70004306CE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFA620267F6B004306CE /* DataManager.swift */; };
+		7A0FDFE020267F70004306CE /* Contactable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFA820267F6C004306CE /* Contactable.swift */; };
+		7A0FDFE120267F70004306CE /* ScoreboardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFA920267F6C004306CE /* ScoreboardEntity.swift */; };
+		7A0FDFE220267F70004306CE /* PhysicsBodyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFAA20267F6C004306CE /* PhysicsBodyComponent.swift */; };
+		7A0FDFE320267F70004306CE /* PauseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFAB20267F6C004306CE /* PauseState.swift */; };
+		7A0FDFE420267F70004306CE /* PrizeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFAC20267F6C004306CE /* PrizeType.swift */; };
+		7A0FDFE520267F70004306CE /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFAD20267F6C004306CE /* ImageName.swift */; };
+		7A0FDFE620267F70004306CE /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFAE20267F6C004306CE /* SoundManager.swift */; };
+		7A0FDFE720267F70004306CE /* ObstacleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFAF20267F6C004306CE /* ObstacleEntity.swift */; };
+		7A0FDFE820267F70004306CE /* NodeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFB020267F6C004306CE /* NodeComponent.swift */; };
+		7A0FDFE920267F70004306CE /* PositionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFB120267F6D004306CE /* PositionComponent.swift */; };
+		7A0FDFEA20267F70004306CE /* EntityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFB220267F6D004306CE /* EntityName.swift */; };
+		7A0FDFEB20267F70004306CE /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFB320267F6D004306CE /* ApplicationDelegate.swift */; };
+		7A0FDFEC20267F70004306CE /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFB420267F6D004306CE /* FontManager.swift */; };
+		7A0FDFEE20267F70004306CE /* AtlasManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFB620267F6D004306CE /* AtlasManager.swift */; };
+		7A0FDFF120267F70004306CE /* BeginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFB920267F6D004306CE /* BeginState.swift */; };
+		7A0FDFF220267F70004306CE /* PreloadingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFBA20267F6D004306CE /* PreloadingScene.swift */; };
+		7A0FDFF320267F70004306CE /* SpriteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFBB20267F6D004306CE /* SpriteEntity.swift */; };
+		7A0FDFF420267F70004306CE /* 04B19.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A0FDFBC20267F6E004306CE /* 04B19.ttf */; };
+		7A0FDFF620267F70004306CE /* Collect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7A0FDFBE20267F6E004306CE /* Collect.wav */; };
+		7A0FDFF720267F70004306CE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFBF20267F6E004306CE /* GameViewController.swift */; };
+		7A0FDFF820267F70004306CE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFC020267F6E004306CE /* GameScene.swift */; };
+		7A0FDFF920267F70004306CE /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFC120267F6E004306CE /* PhysicsCategory.swift */; };
+		7A0FDFFB20267F70004306CE /* GeneratorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFC320267F6E004306CE /* GeneratorEntity.swift */; };
+		7A0FDFFC20267F70004306CE /* Blocked.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A0FDFC420267F6E004306CE /* Blocked.ttf */; };
+		7A0FDFFD20267F70004306CE /* SoundName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFC520267F6E004306CE /* SoundName.swift */; };
+		7A0FDFFE20267F70004306CE /* AnimationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFC620267F6E004306CE /* AnimationCategory.swift */; };
+		7A0FDFFF20267F70004306CE /* EndState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFC720267F6E004306CE /* EndState.swift */; };
+		7A0FE00020267F70004306CE /* GameStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFC820267F6F004306CE /* GameStateMachine.swift */; };
+		7A0FE00120267F70004306CE /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFC920267F6F004306CE /* Position.swift */; };
+		7A0FE00320267F70004306CE /* PositionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFCB20267F6F004306CE /* PositionCategory.swift */; };
+		7A0FE00420267F70004306CE /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFCC20267F6F004306CE /* EntityManager.swift */; };
+		7A0FE00520267F70004306CE /* AtlasName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFCD20267F6F004306CE /* AtlasName.swift */; };
+		7A0FE00620267F70004306CE /* EmptyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFCE20267F6F004306CE /* EmptyEntity.swift */; };
+		7A0FE00720267F70004306CE /* GroundEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFCF20267F6F004306CE /* GroundEntity.swift */; };
+		7A0FE00820267F70004306CE /* ActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFD020267F6F004306CE /* ActiveState.swift */; };
+		7A0FE00920267F70004306CE /* Jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7A0FDFD120267F6F004306CE /* Jump.wav */; };
+		7A0FE00A20267F70004306CE /* SegueComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FDFD220267F6F004306CE /* SegueComponent.swift */; };
+		7A0FE00C20267FB7004306CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0FE00B20267FB7004306CE /* Images.xcassets */; };
+		7A413AB3202FFD00009AF018 /* LabelNodeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A413AB2202FFD00009AF018 /* LabelNodeComponent.swift */; };
+		7A46A67E208D581A0011C294 /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7A46A67D208D58190011C294 /* Click.wav */; };
+		7A7199EA251AA11B00438803 /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7199E9251AA11B00438803 /* FontName.swift */; };
+		7AC722DE2092674B0089A86D /* NodeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC722DC2092674B0089A86D /* NodeOrder.swift */; };
+		7AC722DF2092674B0089A86D /* MapEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC722DD2092674B0089A86D /* MapEntity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		122FB5211E510F520000EEBA /* Mimi Adventure Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mimi Adventure Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0FDF9A20267F6A004306CE /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationComponent.swift; path = "Mimi Adventure Time/AnimationComponent.swift"; sourceTree = "<group>"; };
+		7A0FDF9C20267F6A004306CE /* PrizeCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrizeCollection.swift; path = "Mimi Adventure Time/PrizeCollection.swift"; sourceTree = "<group>"; };
+		7A0FDF9D20267F6A004306CE /* StorageKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageKey.swift; path = "Mimi Adventure Time/StorageKey.swift"; sourceTree = "<group>"; };
+		7A0FDF9E20267F6B004306CE /* MovementComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovementComponent.swift; path = "Mimi Adventure Time/MovementComponent.swift"; sourceTree = "<group>"; };
+		7A0FDF9F20267F6B004306CE /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuScene.swift; path = "Mimi Adventure Time/MenuScene.swift"; sourceTree = "<group>"; };
+		7A0FDFA020267F6B004306CE /* CharacterEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CharacterEntity.swift; path = "Mimi Adventure Time/CharacterEntity.swift"; sourceTree = "<group>"; };
+		7A0FDFA120267F6B004306CE /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontManager.swift; path = "Mimi Adventure Time/FontManager.swift"; sourceTree = "<group>"; };
+		7A0FDFA220267F6B004306CE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Mimi Adventure Time/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		7A0FDFA320267F6B004306CE /* SpriteNodeComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteNodeComponent.swift; path = "Mimi Adventure Time/SpriteNodeComponent.swift"; sourceTree = "<group>"; };
+		7A0FDFA420267F6B004306CE /* IdentityComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IdentityComponent.swift; path = "Mimi Adventure Time/IdentityComponent.swift"; sourceTree = "<group>"; };
+		7A0FDFA520267F6B004306CE /* GameConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameConstant.swift; path = "Mimi Adventure Time/GameConstant.swift"; sourceTree = "<group>"; };
+		7A0FDFA620267F6B004306CE /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = "Mimi Adventure Time/DataManager.swift"; sourceTree = "<group>"; };
+		7A0FDFA820267F6C004306CE /* Contactable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contactable.swift; path = "Mimi Adventure Time/Contactable.swift"; sourceTree = "<group>"; };
+		7A0FDFA920267F6C004306CE /* ScoreboardEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScoreboardEntity.swift; path = "Mimi Adventure Time/ScoreboardEntity.swift"; sourceTree = "<group>"; };
+		7A0FDFAA20267F6C004306CE /* PhysicsBodyComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhysicsBodyComponent.swift; path = "Mimi Adventure Time/PhysicsBodyComponent.swift"; sourceTree = "<group>"; };
+		7A0FDFAB20267F6C004306CE /* PauseState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PauseState.swift; path = "Mimi Adventure Time/PauseState.swift"; sourceTree = "<group>"; };
+		7A0FDFAC20267F6C004306CE /* PrizeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrizeType.swift; path = "Mimi Adventure Time/PrizeType.swift"; sourceTree = "<group>"; };
+		7A0FDFAD20267F6C004306CE /* ImageName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageName.swift; path = "Mimi Adventure Time/ImageName.swift"; sourceTree = "<group>"; };
+		7A0FDFAE20267F6C004306CE /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundManager.swift; path = "Mimi Adventure Time/SoundManager.swift"; sourceTree = "<group>"; };
+		7A0FDFAF20267F6C004306CE /* ObstacleEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObstacleEntity.swift; path = "Mimi Adventure Time/ObstacleEntity.swift"; sourceTree = "<group>"; };
+		7A0FDFB020267F6C004306CE /* NodeComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NodeComponent.swift; path = "Mimi Adventure Time/NodeComponent.swift"; sourceTree = "<group>"; };
+		7A0FDFB120267F6D004306CE /* PositionComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionComponent.swift; path = "Mimi Adventure Time/PositionComponent.swift"; sourceTree = "<group>"; };
+		7A0FDFB220267F6D004306CE /* EntityName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntityName.swift; path = "Mimi Adventure Time/EntityName.swift"; sourceTree = "<group>"; };
+		7A0FDFB320267F6D004306CE /* ApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
+		7A0FDFB420267F6D004306CE /* FontManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontManager.swift; path = "Mimi Adventure Time/FontManager.swift"; sourceTree = "<group>"; };
+		7A0FDFB620267F6D004306CE /* AtlasManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtlasManager.swift; path = "Mimi Adventure Time/AtlasManager.swift"; sourceTree = "<group>"; };
+		7A0FDFB920267F6D004306CE /* BeginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeginState.swift; path = "Mimi Adventure Time/BeginState.swift"; sourceTree = "<group>"; };
+		7A0FDFBA20267F6D004306CE /* PreloadingScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreloadingScene.swift; path = "Mimi Adventure Time/PreloadingScene.swift"; sourceTree = "<group>"; };
+		7A0FDFBB20267F6D004306CE /* SpriteEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpriteEntity.swift; path = "Mimi Adventure Time/SpriteEntity.swift"; sourceTree = "<group>"; };
+		7A0FDFBC20267F6E004306CE /* 04B19.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = 04B19.ttf; path = "Mimi Adventure Time/04B19.ttf"; sourceTree = "<group>"; };
+		7A0FDFBE20267F6E004306CE /* Collect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Collect.wav; path = "Mimi Adventure Time/Collect.wav"; sourceTree = "<group>"; };
+		7A0FDFBF20267F6E004306CE /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		7A0FDFC020267F6E004306CE /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = "Mimi Adventure Time/GameScene.swift"; sourceTree = "<group>"; };
+		7A0FDFC120267F6E004306CE /* PhysicsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhysicsCategory.swift; path = "Mimi Adventure Time/PhysicsCategory.swift"; sourceTree = "<group>"; };
+		7A0FDFC320267F6E004306CE /* GeneratorEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneratorEntity.swift; path = "Mimi Adventure Time/GeneratorEntity.swift"; sourceTree = "<group>"; };
+		7A0FDFC420267F6E004306CE /* Blocked.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Blocked.ttf; path = "Mimi Adventure Time/Blocked.ttf"; sourceTree = "<group>"; };
+		7A0FDFC520267F6E004306CE /* SoundName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundName.swift; path = "Mimi Adventure Time/SoundName.swift"; sourceTree = "<group>"; };
+		7A0FDFC620267F6E004306CE /* AnimationCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationCategory.swift; path = "Mimi Adventure Time/AnimationCategory.swift"; sourceTree = "<group>"; };
+		7A0FDFC720267F6E004306CE /* EndState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndState.swift; path = "Mimi Adventure Time/EndState.swift"; sourceTree = "<group>"; };
+		7A0FDFC820267F6F004306CE /* GameStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameStateMachine.swift; path = "Mimi Adventure Time/GameStateMachine.swift"; sourceTree = "<group>"; };
+		7A0FDFC920267F6F004306CE /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Position.swift; path = "Mimi Adventure Time/Position.swift"; sourceTree = "<group>"; };
+		7A0FDFCA20267F6F004306CE /* Information.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Information.plist; path = "Mimi Adventure Time/Information.plist"; sourceTree = "<group>"; };
+		7A0FDFCB20267F6F004306CE /* PositionCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionCategory.swift; path = "Mimi Adventure Time/PositionCategory.swift"; sourceTree = "<group>"; };
+		7A0FDFCC20267F6F004306CE /* EntityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntityManager.swift; path = "Mimi Adventure Time/EntityManager.swift"; sourceTree = "<group>"; };
+		7A0FDFCD20267F6F004306CE /* AtlasName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtlasName.swift; path = "Mimi Adventure Time/AtlasName.swift"; sourceTree = "<group>"; };
+		7A0FDFCE20267F6F004306CE /* EmptyEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyEntity.swift; path = "Mimi Adventure Time/EmptyEntity.swift"; sourceTree = "<group>"; };
+		7A0FDFCF20267F6F004306CE /* GroundEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroundEntity.swift; path = "Mimi Adventure Time/GroundEntity.swift"; sourceTree = "<group>"; };
+		7A0FDFD020267F6F004306CE /* ActiveState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActiveState.swift; path = "Mimi Adventure Time/ActiveState.swift"; sourceTree = "<group>"; };
+		7A0FDFD120267F6F004306CE /* Jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Jump.wav; path = "Mimi Adventure Time/Jump.wav"; sourceTree = "<group>"; };
+		7A0FDFD220267F6F004306CE /* SegueComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SegueComponent.swift; path = "Mimi Adventure Time/SegueComponent.swift"; sourceTree = "<group>"; };
+		7A0FE00B20267FB7004306CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7A413AB2202FFD00009AF018 /* LabelNodeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LabelNodeComponent.swift; path = "Mimi Adventure Time/LabelNodeComponent.swift"; sourceTree = "<group>"; };
+		7A46A67D208D58190011C294 /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Click.wav; path = "Mimi Adventure Time/Click.wav"; sourceTree = "<group>"; };
+		7A7199E9251AA11B00438803 /* FontName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontName.swift; path = "Mimi Adventure Time/FontName.swift"; sourceTree = "<group>"; };
+		7AC722DC2092674B0089A86D /* NodeOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NodeOrder.swift; path = "Mimi Adventure Time/NodeOrder.swift"; sourceTree = "<group>"; };
+		7AC722DD2092674B0089A86D /* MapEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapEntity.swift; path = "Mimi Adventure Time/MapEntity.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		122FB51E1E510F520000EEBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		120533A01EDFAEA700B99B45 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFC620267F6E004306CE /* AnimationCategory.swift */,
+				7A0FDFB220267F6D004306CE /* EntityName.swift */,
+				7A0FDFAC20267F6C004306CE /* PrizeType.swift */,
+			);
+			name = Enumerations;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1217843A1EE5B3410050C20B /* States Machines */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFC820267F6F004306CE /* GameStateMachine.swift */,
+			);
+			name = "States Machines";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		122FB5181E510F520000EEBA = {
+			isa = PBXGroup;
+			children = (
+				7A7199D6251A738400438803 /* Mimi Adventure Time */,
+				122FB5221E510F520000EEBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		122FB5221E510F520000EEBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				122FB5211E510F520000EEBA /* Mimi Adventure Time.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12319A4A1F830C5A00F1875A /* States */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFD020267F6F004306CE /* ActiveState.swift */,
+				7A0FDFB920267F6D004306CE /* BeginState.swift */,
+				7A0FDFC720267F6E004306CE /* EndState.swift */,
+				7A0FDFAB20267F6C004306CE /* PauseState.swift */,
+			);
+			name = States;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		123CB7D71F7DA5FD00CE8291 /* Entities Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFCC20267F6F004306CE /* EntityManager.swift */,
+			);
+			name = "Entities Managers";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		126187F61F49040D00670D14 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFA220267F6B004306CE /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		12705DCE1EDDCFDC00132EB2 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				7A7199E9251AA11B00438803 /* FontName.swift */,
+				7A0FDFA520267F6B004306CE /* GameConstant.swift */,
+				7AC722DC2092674B0089A86D /* NodeOrder.swift */,
+				7A0FDFC120267F6E004306CE /* PhysicsCategory.swift */,
+				7A0FDFC920267F6F004306CE /* Position.swift */,
+				7A0FDFCB20267F6F004306CE /* PositionCategory.swift */,
+				7A0FDF9C20267F6A004306CE /* PrizeCollection.swift */,
+				7A0FDF9D20267F6A004306CE /* StorageKey.swift */,
+			);
+			name = Structures;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		12705DCF1EDDCFE300132EB2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFC020267F6E004306CE /* GameScene.swift */,
+				7A0FDF9F20267F6B004306CE /* MenuScene.swift */,
+				7A0FDFBA20267F6D004306CE /* PreloadingScene.swift */,
+			);
+			name = Scenes;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		12705DD31EDDD00D00132EB2 /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFCA20267F6F004306CE /* Information.plist */,
+			);
+			name = "Property Lists";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		12705DD41EDDD02100132EB2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFBC20267F6E004306CE /* 04B19.ttf */,
+				7A0FDFC420267F6E004306CE /* Blocked.ttf */,
+			);
+			name = Fonts;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		12C2415F1F4A7B64006C0746 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFA020267F6B004306CE /* CharacterEntity.swift */,
+				7A0FDFCE20267F6F004306CE /* EmptyEntity.swift */,
+				7A0FDFC320267F6E004306CE /* GeneratorEntity.swift */,
+				7A0FDFCF20267F6F004306CE /* GroundEntity.swift */,
+				7AC722DD2092674B0089A86D /* MapEntity.swift */,
+				7A0FDFAF20267F6C004306CE /* ObstacleEntity.swift */,
+				7A0FDFA920267F6C004306CE /* ScoreboardEntity.swift */,
+				7A0FDFBB20267F6D004306CE /* SpriteEntity.swift */,
+			);
+			name = Entities;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		12C241601F4A7B71006C0746 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDF9A20267F6A004306CE /* AnimationComponent.swift */,
+				7A0FDFA420267F6B004306CE /* IdentityComponent.swift */,
+				7A413AB2202FFD00009AF018 /* LabelNodeComponent.swift */,
+				7A0FDF9E20267F6B004306CE /* MovementComponent.swift */,
+				7A0FDFB020267F6C004306CE /* NodeComponent.swift */,
+				7A0FDFAA20267F6C004306CE /* PhysicsBodyComponent.swift */,
+				7A0FDFB120267F6D004306CE /* PositionComponent.swift */,
+				7A0FDFD220267F6F004306CE /* SegueComponent.swift */,
+				7A0FDFA320267F6B004306CE /* SpriteNodeComponent.swift */,
+			);
+			name = Components;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7A44773020051676004C852C /* Sound Effects */ = {
+			isa = PBXGroup;
+			children = (
+				7A46A67D208D58190011C294 /* Click.wav */,
+				7A0FDFBE20267F6E004306CE /* Collect.wav */,
+				7A0FDFD120267F6F004306CE /* Jump.wav */,
+			);
+			name = "Sound Effects";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7A51DF8A1FF06B6300CCD191 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFA820267F6C004306CE /* Contactable.swift */,
+			);
+			name = Protocols;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7A7199D3251A733400438803 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFB320267F6D004306CE /* ApplicationDelegate.swift */,
+				7A0FDFBF20267F6E004306CE /* GameViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7A7199D6251A738400438803 /* Mimi Adventure Time */ = {
+			isa = PBXGroup;
+			children = (
+				7A7199D3251A733400438803 /* Application */,
+				7A7199DE251A754A00438803 /* Assets */,
+				7AFD64201FFB12680094CF66 /* Bundle Resources Names */,
+				12C241601F4A7B71006C0746 /* Components */,
+				12C2415F1F4A7B64006C0746 /* Entities */,
+				123CB7D71F7DA5FD00CE8291 /* Entities Managers */,
+				120533A01EDFAEA700B99B45 /* Enumerations */,
+				12705DD41EDDD02100132EB2 /* Fonts */,
+				12705DD31EDDD00D00132EB2 /* Property Lists */,
+				7A51DF8A1FF06B6300CCD191 /* Protocols */,
+				12705DCF1EDDCFE300132EB2 /* Scenes */,
+				7A81530C1FED609A0085B63D /* Shared Managers */,
+				7A44773020051676004C852C /* Sound Effects */,
+				12319A4A1F830C5A00F1875A /* States */,
+				1217843A1EE5B3410050C20B /* States Machines */,
+				126187F61F49040D00670D14 /* Storyboards */,
+				12705DCE1EDDCFDC00132EB2 /* Structures */,
+			);
+			path = "Mimi Adventure Time";
+			sourceTree = "<group>";
+		};
+		7A7199DE251A754A00438803 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FE00B20267FB7004306CE /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7A81530C1FED609A0085B63D /* Shared Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFB620267F6D004306CE /* AtlasManager.swift */,
+				7A0FDFA620267F6B004306CE /* DataManager.swift */,
+				7A0FDFB420267F6D004306CE /* FontManager.swift */,
+				7A0FDFAE20267F6C004306CE /* SoundManager.swift */,
+			);
+			name = "Shared Managers";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7AFD64201FFB12680094CF66 /* Bundle Resources Names */ = {
+			isa = PBXGroup;
+			children = (
+				7A0FDFCD20267F6F004306CE /* AtlasName.swift */,
+				7A0FDFA120267F6B004306CE /* FontManager.swift */,
+				7A0FDFAD20267F6C004306CE /* ImageName.swift */,
+				7A0FDFC520267F6E004306CE /* SoundName.swift */,
+			);
+			name = "Bundle Resources Names";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		122FB5201E510F520000EEBA /* Mimi Adventure Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 122FB5391E510F520000EEBA /* Build configuration list for PBXNativeTarget "Mimi Adventure Time" */;
+			buildPhases = (
+				122FB51D1E510F520000EEBA /* Sources */,
+				122FB51E1E510F520000EEBA /* Frameworks */,
+				122FB51F1E510F520000EEBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mimi Adventure Time";
+			productName = "Mimi's Adventure";
+			productReference = 122FB5211E510F520000EEBA /* Mimi Adventure Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		122FB5191E510F520000EEBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "Federico Maza";
+				TargetAttributes = {
+					122FB5201E510F520000EEBA = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1160;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 122FB51C1E510F520000EEBA /* Build configuration list for PBXProject "Mimi Adventure Time" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 122FB5181E510F520000EEBA;
+			productRefGroup = 122FB5221E510F520000EEBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				122FB5201E510F520000EEBA /* Mimi Adventure Time */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		122FB51F1E510F520000EEBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0FDFF420267F70004306CE /* 04B19.ttf in Resources */,
+				7A0FDFFC20267F70004306CE /* Blocked.ttf in Resources */,
+				7A0FDFF620267F70004306CE /* Collect.wav in Resources */,
+				7A0FE00920267F70004306CE /* Jump.wav in Resources */,
+				7A46A67E208D581A0011C294 /* Click.wav in Resources */,
+				7A0FDFDB20267F70004306CE /* LaunchScreen.storyboard in Resources */,
+				7A0FE00C20267FB7004306CE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		122FB51D1E510F520000EEBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0FDFD920267F70004306CE /* CharacterEntity.swift in Sources */,
+				7A0FDFE720267F70004306CE /* ObstacleEntity.swift in Sources */,
+				7A0FDFE320267F70004306CE /* PauseState.swift in Sources */,
+				7A0FDFD520267F6F004306CE /* PrizeCollection.swift in Sources */,
+				7A0FDFFE20267F70004306CE /* AnimationCategory.swift in Sources */,
+				7A0FE00720267F70004306CE /* GroundEntity.swift in Sources */,
+				7A0FDFF320267F70004306CE /* SpriteEntity.swift in Sources */,
+				7A0FDFF120267F70004306CE /* BeginState.swift in Sources */,
+				7A0FDFE220267F70004306CE /* PhysicsBodyComponent.swift in Sources */,
+				7AC722DF2092674B0089A86D /* MapEntity.swift in Sources */,
+				7A0FE00620267F70004306CE /* EmptyEntity.swift in Sources */,
+				7A0FDFFF20267F70004306CE /* EndState.swift in Sources */,
+				7A0FE00320267F70004306CE /* PositionCategory.swift in Sources */,
+				7A0FDFDF20267F70004306CE /* DataManager.swift in Sources */,
+				7A0FDFF720267F70004306CE /* GameViewController.swift in Sources */,
+				7A7199EA251AA11B00438803 /* FontName.swift in Sources */,
+				7A0FE00520267F70004306CE /* AtlasName.swift in Sources */,
+				7A0FDFE520267F70004306CE /* ImageName.swift in Sources */,
+				7A0FDFEA20267F70004306CE /* EntityName.swift in Sources */,
+				7A0FDFDE20267F70004306CE /* GameConstant.swift in Sources */,
+				7A0FDFE820267F70004306CE /* NodeComponent.swift in Sources */,
+				7A0FE00420267F70004306CE /* EntityManager.swift in Sources */,
+				7A0FDFF920267F70004306CE /* PhysicsCategory.swift in Sources */,
+				7A413AB3202FFD00009AF018 /* LabelNodeComponent.swift in Sources */,
+				7A0FDFF820267F70004306CE /* GameScene.swift in Sources */,
+				7A0FDFD720267F70004306CE /* MovementComponent.swift in Sources */,
+				7A0FDFE920267F70004306CE /* PositionComponent.swift in Sources */,
+				7A0FDFEB20267F70004306CE /* ApplicationDelegate.swift in Sources */,
+				7A0FDFEC20267F70004306CE /* FontManager.swift in Sources */,
+				7A0FE00820267F70004306CE /* ActiveState.swift in Sources */,
+				7A0FDFE020267F70004306CE /* Contactable.swift in Sources */,
+				7A0FE00120267F70004306CE /* Position.swift in Sources */,
+				7A0FE00A20267F70004306CE /* SegueComponent.swift in Sources */,
+				7A0FDFE420267F70004306CE /* PrizeType.swift in Sources */,
+				7A0FE00020267F70004306CE /* GameStateMachine.swift in Sources */,
+				7A0FDFE120267F70004306CE /* ScoreboardEntity.swift in Sources */,
+				7A0FDFD820267F70004306CE /* MenuScene.swift in Sources */,
+				7AC722DE2092674B0089A86D /* NodeOrder.swift in Sources */,
+				7A0FDFEE20267F70004306CE /* AtlasManager.swift in Sources */,
+				7A0FDFD320267F6F004306CE /* AnimationComponent.swift in Sources */,
+				7A0FDFE620267F70004306CE /* SoundManager.swift in Sources */,
+				7A0FDFDD20267F70004306CE /* IdentityComponent.swift in Sources */,
+				7A0FDFFD20267F70004306CE /* SoundName.swift in Sources */,
+				7A0FDFD620267F70004306CE /* StorageKey.swift in Sources */,
+				7A0FDFFB20267F70004306CE /* GeneratorEntity.swift in Sources */,
+				7A0FDFDC20267F70004306CE /* SpriteNodeComponent.swift in Sources */,
+				7A0FDFF220267F70004306CE /* PreloadingScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		122FB5371E510F520000EEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_STICKER_PACK_IDENTIFIER_PREFIX = "$(PRODUCT_BUNDLE_IDENTIFIER).stickerpack";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mimi Adventure Time";
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_INFOPLIST_RENAME = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		122FB5381E510F520000EEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_STICKER_PACK_IDENTIFIER_PREFIX = "$(PRODUCT_BUNDLE_IDENTIFIER).stickerpack";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
+				CLANG_WARN_BOOL_CONVERSION = NO;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = NO;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = NO;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mimi Adventure Time";
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_INFOPLIST_RENAME = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		122FB53A1E510F520000EEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
+				ASSETCATALOG_COMPILER_STICKER_PACK_IDENTIFIER_PREFIX = "$(PRODUCT_BUNDLE_IDENTIFIER).stickerpack";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Mimi Adventure Time/Information.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.mimi.adventuretime;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:identifier)";
+				PRODUCT_NAME = "Mimi Adventure Time";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRINGS_FILE_OUTPUT_ENCODING = binary;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		122FB53B1E510F520000EEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
+				ASSETCATALOG_COMPILER_STICKER_PACK_IDENTIFIER_PREFIX = "$(PRODUCT_BUNDLE_IDENTIFIER).stickerpack";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Mimi Adventure Time/Information.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.mimi.adventuretime;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:identifier)";
+				PRODUCT_NAME = "Mimi Adventure Time";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRINGS_FILE_OUTPUT_ENCODING = binary;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		122FB51C1E510F520000EEBA /* Build configuration list for PBXProject "Mimi Adventure Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				122FB5371E510F520000EEBA /* Debug */,
+				122FB5381E510F520000EEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		122FB5391E510F520000EEBA /* Build configuration list for PBXNativeTarget "Mimi Adventure Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				122FB53A1E510F520000EEBA /* Debug */,
+				122FB53B1E510F520000EEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 122FB5191E510F520000EEBA /* Project object */;
+}
